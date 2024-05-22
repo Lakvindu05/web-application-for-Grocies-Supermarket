@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loyalty Registration - Groceries Supermarket</title>
+    <link rel="stylesheet" href="loyalty.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Grocies Supermarket</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="loyalty.html">Loyalty Registration</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Loyalty Registration</h1>
+        <section class="benefits">
+            <h2>Loyalty Scheme Benefits</h2>
+            <ul>
+                <li><strong>Basic Membership:</strong> Earn 1 point for every $1 spent. Redeem points for discounts.</li>
+                <li><strong>Premium Membership:</strong> Earn 2 points for every $1 spent, free delivery on orders over $50, exclusive offers.</li>
+                <li><strong>VIP Membership:</strong> Earn 3 points for every $1 spent, free delivery on all orders, priority customer service, exclusive events.</li>
+            </ul>
+        </section>
+        <section class="loyalty-form-section">
+            <h2>Register for Our Loyalty Program</h2>
+            <form action="#" method="post" class="loyalty-form">
+                <div class="form-group">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="loyalty-scheme">Select Loyalty Scheme:</label>
+                    <select id="loyalty-scheme" name="loyalty-scheme">
+                        <option value="basic">Basic Membership</option>
+                        <option value="premium">Premium Membership</option>
+                        <option value="vip">VIP Membership</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="register-button">Register</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Groceries Supermarket</p>
+    </footer>
+</body>
+</html>
