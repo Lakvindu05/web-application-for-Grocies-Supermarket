@@ -19,6 +19,7 @@
     text-align: center;
     flex: 1 1 calc(25% - 2rem);
     box-sizing: border-box;
+    transition: transform 0.3s;
 }
 
 .product img {
@@ -39,8 +40,32 @@
     text-decoration: none;
     border-radius: 5px;
     font-size: 1.2rem;
+    transition: background-color 0.3s;
 }
 
 .order-button:hover {
     background-color: #0056b3;
+}
+
+@media (max-width: 1200px) {
+    .product {
+        flex: 1 1 calc(33.333% - 2rem);
+    }
+}
+
+@media (max-width: 992px) {
+    .product {
+        flex: 1 1 calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .product {
+        flex: 1 1 calc(100% - 2rem);
+    }
+}
+
+/* Optional: Add a hover effect for better user experience */
+.product:hover {
+    transform: scale(1.05);
 }
