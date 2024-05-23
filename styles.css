@@ -1,3 +1,17 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
 /* Header Styles */
 header {
     background-color: #007bff;
@@ -55,6 +69,7 @@ nav ul li a {
     height: 2px;
     background: white;
     margin: 5px 0;
+    transition: background 0.3s;
 }
 
 .nav-menu .dropbtn {
@@ -142,5 +157,13 @@ footer {
 
     .nav-toggle:checked + .nav-toggle-label + .nav-menu {
         display: flex;
+    }
+
+    .nav-toggle:checked + .nav-toggle-label {
+        display: none;
+    }
+
+    .nav-toggle:checked + .nav-toggle-label span {
+        background: transparent;
     }
 }
